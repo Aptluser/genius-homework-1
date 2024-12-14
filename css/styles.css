@@ -1,0 +1,46 @@
+:root {
+  --color-primory-lite: #ffffff;
+  --color-primory-dark: #011c44;
+  --color-brand-lite: #2b7fff;
+}
+
+/* Base */
+body {
+  color: var(--color-primory-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Button */
+.button {
+  color: var(--color-primory-lite);
+  background-color: var(--color-brand-lite);
+  border: 2px solid var(--color-brand-lite);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primory-dark);
+  background-color: transparent;
+}
+
+/* Link */
+.link {
+  color: var(--color-primory-dark);
+}
+
+.link:hover {
+  color: var(--color-brand-lite);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-lite);
+}
+
+.accent {
+  color: var(--color-brand-lite);
+}
