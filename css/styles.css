@@ -1,3 +1,39 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  src: url('../fonts/roboto-mono-v23-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  src: url('../fonts/roboto-mono-v23-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-mono-v23-latin-700.woff2') format('woff2');
+}
+
 :root {
   --color-primory-lite: #ffffff;
   --color-primory-dark: #011c44;
@@ -7,14 +43,28 @@
 /* Base */
 body {
   color: var(--color-primory-dark);
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 ul {
   list-style-type: none;
 }
 
+h3 {
+  font-weight: normal;
+}
+
+address {
+  font-style: normal;
+}
+
 /* Button */
 .button {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   color: var(--color-primory-lite);
   background-color: var(--color-brand-lite);
   border: 2px solid var(--color-brand-lite);
@@ -30,17 +80,50 @@ ul {
 /* Link */
 .link {
   color: var(--color-primory-dark);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand-lite);
+  font-weight: 700;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-brand-lite);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  text-transform: capitalize;
 }
 
 .accent {
   color: var(--color-brand-lite);
+}
+
+.accent.capitalize {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.hero-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Section */
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+}
+
+.section-text {
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+.section-text.us {
+  font-size: 18px;
+  line-height: 1.33;
 }
